@@ -1,14 +1,322 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>technologY</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/script.js" defer></script>
 </head>
+
 <body>
-  
+  <!-- header -->
+  <header class="header">
+    <div>
+      <h1 class="header__logo">
+        <a href="#">
+          <img src="./img/logo.svg" alt="logo">
+        </a>
+      </h1>
+      <nav class="header__menu">
+        <ul>
+          <li><a href="#">menuitem1</a></li>
+          <li><a href="#">menuitem2</a></li>
+          <li><a href="#">menuitem3</a></li>
+          <li><a href="#">menuitem4</a></li>
+          <li><a href="#">menuitem5</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="btn-language">
+      <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7 3.83801C8.51952 2.95891 10.2445 2.49731 12 2.50001C17.523 2.50001 22 6.97701 22 12.5C22 18.023 17.523 22.5 12 22.5C6.477 22.5 2 18.023 2 12.5C2 10.679 2.487 8.97001 3.338 7.50001"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" />
+        <path
+          d="M14.828 19.571C14.457 20.5 14.016 21.236 13.531 21.739C13.045 22.241 12.525 22.5 12 22.5C11.475 22.5 10.955 22.241 10.47 21.739C9.984 21.236 9.543 20.499 9.172 19.571C8.8 18.642 8.505 17.541 8.304 16.327C8.09897 15.0617 7.9973 13.7818 8 12.5C8 11.187 8.103 9.886 8.304 8.673C8.505 7.46 8.8 6.358 9.172 5.429C9.543 4.5 9.984 3.764 10.469 3.261C10.955 2.76 11.475 2.5 12 2.5C12.525 2.5 13.045 2.759 13.53 3.261C14.016 3.764 14.457 4.501 14.828 5.429C15.2 6.358 15.495 7.459 15.695 8.673C15.896 9.886 16 11.187 16 12.5C16 13.813 15.896 15.114 15.695 16.327M2 12.5H10M22 12.5H14"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+
+    </div>
+  </header>
+
+  <!-- main-slide -->
+  <section class="main-slide">
+    <div class="slide-content">
+    </div>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide swiper-slide-1">
+          <div class="slide-content">
+            <img src="./img/main-slide__content.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide-2">Slide 2</div>
+        <div class="swiper-slide swiper-slide-3">Slide 3</div>
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+
+  <!-- section-1 -->
+  <section class="section-1">
+    <div class="section__title">
+      <div>Gillette</div>
+      <div>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit
+      </div>
+    </div>
+
+    <div class="section-1__slide">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
+
+
+  <!-- section-2 -->
+  <section class="section-2">
+    <div class="container">
+      <div class="section__title">
+        <div>Russian Federation</div>
+        <div>
+          Amet minim mollit non deserunt ullamco est sit
+        </div>
+      </div>
+      <div class="section-2__content">
+        <div class="article-box">
+          <div class="article-title">
+            <div>MENU</div>
+            <div>more</div>
+          </div>
+          <ul class="article-contents">
+            <li>
+              <a href="#">How to design a product that can grow itself 10x in year:</a>
+              <div>21 Sep, 2020</div>
+            </li>
+            <li>
+              <a href="#">Yo Reddit! What’s a small thing that anyone can do at nearly anytime to improve their mood and
+                make them happier?</a>
+              <div>17 Oct, 2020</div>
+            </li>
+            <li>
+              <a href="#">How to design a product that can grow itself 10x in year:</a>
+              <div>1 Feb, 2020</div>
+            </li>
+            <li>
+              <a href="#">Understanding color theory: the color wheel and finding complementary colors</a>
+              <div>24 May, 2020</div>
+            </li>
+          </ul>
+        </div>
+        <div class="article-box">
+          <div class="article-title">
+            <div>MENU</div>
+            <div>more</div>
+          </div>
+          <ul class="article-contents">
+            <li>
+              <a href="#">How to design a product that can grow itself 10x in year:</a>
+              <div>21 Sep, 2020</div>
+            </li>
+            <li>
+              <a href="#">Yo Reddit! What’s a small thing that anyone can do at nearly anytime to improve their mood and
+                make them happier?</a>
+              <div>17 Oct, 2020</div>
+            </li>
+            <li>
+              <a href="#">How to design a product that can grow itself 10x in year:</a>
+              <div>1 Feb, 2020</div>
+            </li>
+            <li>
+              <a href="#">Understanding color theory: the color wheel and finding complementary colors</a>
+              <div>24 May, 2020</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section-3 -->
+  <section class="section-3">
+    <div class="section-3__img-box">
+      <div class="img-box__content">
+        <div>
+          Arlene McCoy
+        </div>
+        <div>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+          velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </div>
+      </div>
+    </div>
+    <div class="section-3__img-box">
+      <div class="img-box__content">
+        <div>
+          Kristin Watson
+        </div>
+        <div>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+          velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </div>
+      </div>
+    </div>
+    <div class="section-3__img-box">
+      <div class="img-box__content">
+        <div>
+          Savannah Nguyen
+        </div>
+        <div>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+          velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section-4 -->
+  <section class="section-4">
+    <div class="container">
+      <div class="section-4__title">
+        <div>
+          Gillette
+        </div>
+        <div>
+          Aliqua id fugiat nostrud irure ex duis ea quis
+        </div>
+      </div>
+      <div class="section-4__content">
+        <div class="section-4__icon-box"><img src="./img/section-4__icon-box01.png" alt=""></div>
+        <div class="section-4__icon-box"><img src="./img/section-4__icon-box02.png" alt=""></div>
+        <div class="section-4__icon-box"><img src="./img/section-4__icon-box03.png" alt=""></div>
+        <div class="section-4__icon-box"><img src="./img/section-4__icon-box04.png" alt=""></div>
+        <div class="section-4__icon-box"><img src="./img/section-4__icon-box05.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+
+  <div class="company-list">
+    <div class="container">
+      <ul>
+        <li><a href="#">company1</a></li>
+        <li><a href="#">company2</a></li>
+        <li><a href="#">company3</a></li>
+        <li><a href="#">company4</a></li>
+        <li><a href="#">company5</a></li>
+        <li><a href="#">company6</a></li>
+        <li><a href="#">company7</a></li>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer__content">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">footermenu1</a>
+            <ul>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">footermenu1</a>
+            <ul>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">footermenu1</a>
+            <ul>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">footermenu1</a>
+            <ul>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">footermenu1</a>
+            <ul>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+              <li><a href="#">footermenu2</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="footer__company-info">
+          <div>
+            <div class="company-logo">
+              <img src="./img/footer-logo.svg" alt="footer-logo">
+            </div>
+            <div class="company-address">
+              775 Rolling Green Rd.
+            </div>
+            <div class="company-number">
+              <div>Tel. (907) 555-0101</div>
+              <div>Fax. (270) 555-0117</div>
+            </div>
+          </div>
+
+          <div class="text">
+            <div>Convergent and divergent plate margins</div>
+            <div>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
+
 </html>
