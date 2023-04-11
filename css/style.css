@@ -45,7 +45,7 @@ header {
   z-index: 99;
   width: 100%;
   padding: 20px 80px;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s, top 1s;
 }
 
 header.black {
@@ -86,6 +86,46 @@ header>div {
 
 .header__menu>ul>li:hover>a::after {
   width: 100%;
+}
+
+.btn-sidemenu {
+  display: none;
+}
+
+
+/* mobile-side-menu */
+
+.mobile-side-menu {
+  width:100%;
+  height:100vh;
+  position:fixed;
+  top:0;
+  left:0;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index: 99;
+
+
+  /* 230411 임시로 숨김 작업 이어서 진행할 때 지우고 커스텀 고고 */
+  display:none;
+}
+
+.mobile-side-menu__content {
+  margin-left:auto;
+  width:200px;
+  height:100%;
+  background-color:white;
+  display:flex;
+  flex-direction: column;
+  padding:16px;
+}
+
+
+.mobile-side-menu__head {
+  text-align: right;
+}
+
+.mobile-side-menu__btn-close {
+  display:inline-block;
 }
 
 
@@ -153,16 +193,15 @@ header>div {
   color: #161616;
 }
 
-
-/* section-1 */
-.section-1 {
-  margin: 160px 0;
-}
-
 .section__title>div:nth-child(2) {
   font-weight: 400;
   font-size: 16px;
   color: #808080;
+}
+
+/* section-1 */
+.section-1 {
+  margin-top: 120px;
 }
 
 .section-1__slide {
@@ -389,7 +428,7 @@ header>div {
 footer {
   background-color: #1C2336;
   color: #FFFFFF;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 
@@ -416,6 +455,11 @@ footer {
   margin-top: 80px;
   justify-content: space-between;
   font-size: 14px;
+  color: #BABABA;
+}
+
+.company-address {
+  margin-top: 2px;
 }
 
 .company-number {
@@ -427,7 +471,7 @@ footer {
   max-width: 784px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .footer__company-info .text>div:first-child {
@@ -454,6 +498,15 @@ footer {
   .header__menu {
     display: none;
   }
+
+  .btn-language {
+    display: none;
+  }
+
+  .btn-sidemenu {
+    display: block;
+  }
+
 
   .section-2__content {
     flex-direction: column;
@@ -485,12 +538,10 @@ footer {
     text-align: center;
   }
 
-
   .section-4__content {
     justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
-
   }
 
   .footer__company-info {
@@ -502,6 +553,7 @@ footer {
 
 
 @media (max-width: 640px) {
+
   .main-slide .slide-content {
     left: 50%;
     transform: translatex(-50%);
@@ -528,6 +580,10 @@ footer {
     transform: translatex(-50%);
   }
 
+  .section-4__content {
+    gap: 8px;
+  }
+
   .company-list {
     display: none;
   }
@@ -547,15 +603,15 @@ footer {
     gap: 32px;
   }
 
-  .footer__menu ul > li > a {
-    font-size:14px;
+  .footer__menu ul>li>a {
+    font-size: 14px;
   }
 
-  
-.footer__menu ul {
-  margin-top: 8px;
-  gap: 4px;
-}
+
+  .footer__menu ul {
+    margin-top: 8px;
+    gap: 4px;
+  }
 
 
 

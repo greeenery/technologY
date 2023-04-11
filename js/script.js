@@ -1,17 +1,34 @@
-function changeHeaderColor() {
+function changeHeader() {
+
+  
+  let lastScrollTop = 0, delta = 15;
+
 
   $(window).scroll(function (event) {
     let st = $(this).scrollTop();
+
     if (st > 0) {
       $("header").addClass("black");
     } else {
       $("header").removeClass("black");
     }
+
+    if (Math.abs(lastScrollTop - st) <= delta) return;
+
+    if (st > lastScrollTop && lastScrollTop > 0) {
+      $("header").css("top", "-120px");
+    } else {      
+      $("header").css("top", "0px");
+    }
+    lastScrollTop = st;
+    
+
+
   });
 
 }
 
-changeHeaderColor();
+changeHeader();
 
 
 function slide__Init() {
