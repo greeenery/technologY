@@ -227,12 +227,10 @@ header>div {
   gap: 48px;
 }
 
-
-
 .section-2 .article-box {
   max-width: 576px;
+  width: 100%;
   flex: 1 1 0%;
-  border: 1px solid red;
 }
 
 .section-2 .article-title {
@@ -262,22 +260,21 @@ header>div {
 
 .section-2 .article-contents>li {
   display: flex;
+  gap: 16px;
   justify-content: space-between;
 }
 
 .section-2 .article-contents>li>a {
   display: block;
-  width: 400px;
   font-weight: 400;
   font-size: 16px;
   color: #161616;
   white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
-  border: 1px solid red;
 }
 
-.section-2 .article-contents>li:hover>a {
+.section-2 .article-contents>li>a:hover {
   opacity: 0.6;
 }
 
@@ -287,7 +284,6 @@ header>div {
   font-size: 14px;
   text-align: right;
   color: #AAAAAA;
-  border: 1px solid red;
 }
 
 
@@ -303,6 +299,7 @@ header>div {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 20px;
 }
 
 .section-3__img-box:first-child {
@@ -322,7 +319,7 @@ header>div {
   flex-direction: column;
   gap: 10px;
   text-align: center;
-  width: 400px;
+  max-width: 400px;
 }
 
 .img-box__content>div:first-child {
@@ -350,6 +347,7 @@ header>div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 48px;
 }
 
 .section-4__title {
@@ -447,7 +445,7 @@ footer {
 
 
 
-@media (max-width: 1080px) {
+@media (max-width: 1280px) {
 
   header {
     padding: 8px 40px;
@@ -468,6 +466,15 @@ footer {
   }
 
 
+  .img-box__content>div:first-child {
+    font-size: 32px;
+  }
+
+  .img-box__content>div:nth-child(2) {
+    font-size: 20px;
+  }
+
+
   .section-4>div {
     flex-direction: column;
   }
@@ -476,7 +483,6 @@ footer {
   .section-4__title {
     width: auto;
     text-align: center;
-    margin-bottom: 48px;
   }
 
 
@@ -487,20 +493,27 @@ footer {
 
   }
 
-
   .footer__company-info {
     flex-direction: column;
     gap: 20px;
   }
+
 }
 
+
 @media (max-width: 640px) {
-
-
   .main-slide .slide-content {
     left: 50%;
     transform: translatex(-50%);
     bottom: 320px;
+    width: 100%;
+    max-width: 472px;
+    padding: 0 20px;
+  }
+
+  .main-slide .slide-content>img {
+    display: block;
+    width: 100%;
   }
 
   .main-slide .swiper-slide-active .slide-content {
@@ -520,6 +533,29 @@ footer {
   }
 
 
+  .img-box__content>div:first-child {
+    font-size: 24px;
+  }
+
+  .img-box__content>div:nth-child(2) {
+    font-size: 16px;
+  }
+
+
+
+  .footer__menu {
+    gap: 32px;
+  }
+
+  .footer__menu ul > li > a {
+    font-size:14px;
+  }
+
+  
+.footer__menu ul {
+  margin-top: 8px;
+  gap: 4px;
+}
 
 
 
