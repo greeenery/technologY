@@ -30,6 +30,20 @@ function changeHeader() {
 
 changeHeader();
 
+function mobileSidebar__Init(){
+
+  $(".btn-sidemenu").click(function(){
+    $(".mobile-side-menu").addClass("active");
+  });
+
+  
+  $(".mobile-side-menu__btn-close").click(function(){
+    $(".mobile-side-menu").removeClass("active");
+  });
+
+
+}
+mobileSidebar__Init();
 
 function slide__Init() {
   // main-slide
@@ -54,7 +68,7 @@ function slide__Init() {
   const sectionslide = new Swiper('.section-1__slide .swiper', {
     slidesPerView: 1.5,
     centeredSlides: true,
-    spaceBetween: 40,
+    spaceBetween: 8,
     // If we need pagination
     pagination: {
       el: '.section-1__slide .swiper-pagination',
@@ -74,15 +88,15 @@ function slide__Init() {
     breakpoints: {
       768: {
         slidesPerView: 2.5,
-        spaceBetween: 40
+        spaceBetween: 16
       },
       1024: {
         slidesPerView: 3.5,
-        spaceBetween: 40
+        spaceBetween: 24
       },
       1280: {
         slidesPerView: 4.5,
-        spaceBetween: 40
+        spaceBetween: 32
       },
     }
   });
