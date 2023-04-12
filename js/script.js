@@ -1,18 +1,17 @@
 function changeHeader() {
 
-  
   let lastScrollTop = 0, delta = 15;
 
-
   $(window).scroll(function (event) {
+
     let st = $(this).scrollTop();
 
     if (st > 0) {
       $("header").addClass("black");
     } else {
       $("header").removeClass("black");
-    }
 
+    }
     if (Math.abs(lastScrollTop - st) <= delta) return;
 
     if (st > lastScrollTop && lastScrollTop > 0) {
@@ -20,9 +19,8 @@ function changeHeader() {
     } else {      
       $("header").css("top", "0px");
     }
-    lastScrollTop = st;
-    
 
+    lastScrollTop = st;
 
   });
 
@@ -30,20 +28,21 @@ function changeHeader() {
 
 changeHeader();
 
+
 function mobileSidebar__Init(){
 
   $(".btn-sidemenu").click(function(){
     $(".mobile-side-menu").addClass("active");
   });
 
-  
   $(".mobile-side-menu__btn-close").click(function(){
     $(".mobile-side-menu").removeClass("active");
+
   });
-
-
 }
+
 mobileSidebar__Init();
+
 
 function slide__Init() {
   // main-slide

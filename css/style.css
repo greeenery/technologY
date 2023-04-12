@@ -27,6 +27,11 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  font-weight:inherit;
+  font-size:inherit;
+}
 
 * {
   box-sizing: border-box;
@@ -51,7 +56,7 @@ header {
   left: 0;
   z-index: 99;
   width: 100%;
-  padding: 20px 80px;
+  padding: 40px 80px;
   transition: background-color 0.5s, top 1s;
 }
 
@@ -151,7 +156,8 @@ header>div {
 .mobile-side-menu__body > nav > ul > li > a {
   display:block;
   padding:12px;
-
+  font-weight: bold;
+  color:#1C2336;
 }
 
 
@@ -212,14 +218,14 @@ header>div {
   margin-bottom: 60px;
 }
 
-.section__title>div:first-child {
+.section__title>h2 {
   font-weight: 700;
   font-size: 40px;
   color: #161616;
   font-family: 'Tenada';
 }
 
-.section__title>div:nth-child(2) {
+.section__title>div {
   font-weight: 400;
   font-size: 16px;
   color: #808080;
@@ -387,13 +393,13 @@ header>div {
   max-width: 400px;
 }
 
-.img-box__content>div:first-child {
+.img-box__content>h2 {
   font-weight: 700;
   font-size: 36px;
   color: #D9D9D9;
 }
 
-.img-box__content>div:nth-child(2) {
+.img-box__content>div {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
@@ -419,14 +425,14 @@ header>div {
   width: 160px;
 }
 
-.section-4__title>div:first-child {
+.section-4__title>h2 {
   font-weight: 700;
   font-size: 32px;
   color: #161616;
   font-family: 'Tenada';
 }
 
-.section-4__title>div:nth-child(2) {
+.section-4__title>div {
   font-weight: 400;
   font-size: 16px;
 
@@ -514,6 +520,8 @@ footer {
 
 
 
+/* media query */
+
 @media (min-width:1281px) {
   .mobile-side-menu {
     display:none;
@@ -521,9 +529,8 @@ footer {
 }
 
 @media (max-width: 1280px) {
-
   header {
-    padding: 8px 40px;
+    padding: 20px 40px;
   }
 
   .header__menu {
@@ -538,17 +545,14 @@ footer {
     display: block;
   }
 
-
   .section-2__content {
     flex-direction: column;
     align-items: center;
   }
 
-
   .section-3 {
     flex-direction: column;
   }
-
 
   .img-box__content>div:first-child {
     font-size: 32px;
@@ -558,11 +562,9 @@ footer {
     font-size: 20px;
   }
 
-
   .section-4>div {
     flex-direction: column;
   }
-
 
   .section-4__title {
     width: auto;
@@ -587,7 +589,6 @@ footer {
 
 
 @media (max-width: 640px) {
-
   .main-slide .slide-content {
     left: 50%;
     transform: translatex(-50%);
@@ -618,8 +619,6 @@ footer {
     gap: 8px;
   }
 
-
-
   .img-box__content>div:first-child {
     font-size: 24px;
   }
@@ -627,8 +626,6 @@ footer {
   .img-box__content>div:nth-child(2) {
     font-size: 16px;
   }
-
-
 
   .footer__menu {
     gap: 32px;
@@ -638,12 +635,8 @@ footer {
     font-size: 14px;
   }
 
-
   .footer__menu ul {
     margin-top: 8px;
     gap: 4px;
   }
-
-
-
 }
